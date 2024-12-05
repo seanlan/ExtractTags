@@ -14,6 +14,8 @@ def extract_tags(text) -> list[str]:
         keyword = et_zh.extract_tags(text)
     elif lang == "ja":
         keyword = et_ja.extract_tags(text)
+    elif lang == "en":
+        keyword = et_en.extract_tags(text)
     else:
         keyword = et_zh.extract_tags(text)
     return keyword
