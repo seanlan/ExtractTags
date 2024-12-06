@@ -18,4 +18,4 @@ def extract_tags(text) -> list[str]:
         keyword = et_en.extract_tags(text)
     else:
         keyword = et_zh.extract_tags(text)
-    return keyword
+    return list(set(keyword))
